@@ -1,0 +1,7 @@
+package in.onlinebookstore.entity;
+
+
+
+public class Book {
+
+}

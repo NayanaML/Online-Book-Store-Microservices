@@ -1,0 +1,44 @@
+package in.onlinebookstore.serviceImple;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import in.onlinebookstore.entity.Book;
+import in.onlinebookstore.repo.BookCatalogRepo;
+import in.onlinebookstore.service.BookCatalogService;
+
+public class BookCatalogImple implements BookCatalogService {
+	@Autowired
+	private BookCatalogRepo bookrepo;
+
+	@Override
+	public List<Book> bookslist() {
+
+		return bookrepo.findAll();
+	}
+
+	@Override
+	public Book addBook(Book book) {
+		if (book != null) {
+			Book savedbook = bookrepo.save(book);
+			return savedbook;
+
+		}
+		return null;
+	}
+
+	@Override
+	public String removeBook(String id) {
+		Optional<Book> book = bookrepo.findById(id);
+		return null;
+	}
+
+	@Override
+	public Book updateBook(Book book) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

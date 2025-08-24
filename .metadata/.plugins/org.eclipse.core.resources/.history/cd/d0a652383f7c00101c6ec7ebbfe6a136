@@ -1,0 +1,6 @@
+spring.application.name=OnlineBookStore-ApiGateway
+spring.cloud.gateway.routes[0].id=OnlineBookStore-CatalogService
+spring.cloud.gateway.uri=http\://localhost\:8002/
+spring.cloud.gateway.predicates[0]=Path\=/catalog/**
+server.port=8001
+eureka.client.service-url.defaultZone=http\://localhost\:8761/eureka/

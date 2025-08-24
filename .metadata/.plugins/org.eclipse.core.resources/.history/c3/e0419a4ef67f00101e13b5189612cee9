@@ -1,0 +1,8 @@
+package in.onlinebookstore.repo;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import in.onlinebookstore.entity.Book;
+
+public interface BookCatalogRepo extends JpaRepository<Book, Long> {
+}

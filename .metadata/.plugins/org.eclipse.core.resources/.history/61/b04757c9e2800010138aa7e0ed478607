@@ -1,0 +1,9 @@
+package in.onlinebookstore.serviceI;
+
+
+
+public interface BookCatalogService  {
+	
+	
+
+}

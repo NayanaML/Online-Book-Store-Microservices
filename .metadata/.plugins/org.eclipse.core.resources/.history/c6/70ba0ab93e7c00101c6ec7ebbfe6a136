@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: OnlineBookStore-ApiGateway
+  cloud:
+    gateway:
+      routes:
+      - id: OnlineBookStore-CatalogService
+      uri: http://localhost:8002/
+      predicates:
+      - Path=/catalog/**
+
+
+server:
+  port: 8001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+
+  

@@ -1,0 +1,14 @@
+package in.onlinebookstore.serviceI;
+
+import java.util.List;
+
+import in.onlinebookstore.entity.Book;
+
+public interface BookCatalogService  {
+	
+	public List<Book> bookslist();
+	public Book addBook(Book book);
+	public String removeBook(Long id);
+	public Book updateBook(Book book);
+
+}

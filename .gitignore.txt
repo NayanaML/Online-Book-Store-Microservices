@@ -1,0 +1,103 @@
+HELP.md
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+############################
+# Maven
+############################
+.mvn/wrapper/maven-wrapper.properties
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+############################
+# Eclipse / STS
+############################
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+.localstorage/
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+.loadpath
+
+############################
+# IntelliJ IDEA
+############################
+.idea/
+*.iws
+*.iml
+*.ipr
+
+############################
+# NetBeans
+############################
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+############################
+# VS Code
+############################
+.vscode/
+
+############################
+# Java
+############################
+*.class
+*.jar
+*.war
+*.ear
+*.orig
+
+############################
+# Logs
+############################
+*.log
+logs/
+hs_err_pid*
+replay_pid*
+
+############################
+# Spring Boot specific
+############################
+.reloadtrigger
+
+############################
+# Database files (H2)
+############################
+*.db
+*.mv.db
+*.trace.db
+
+############################
+# Environment files
+############################
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+############################
+# OS generated files
+############################
+.DS_Store
+Thumbs.db

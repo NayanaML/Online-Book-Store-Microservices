@@ -1,0 +1,7 @@
+package in.onlinebookstore.serviceI;
+
+import in.onlinebookstore.repo.BookCatalogRepo;
+
+public interface BookCatalogService extends BookCatalogRepo {
+
+}

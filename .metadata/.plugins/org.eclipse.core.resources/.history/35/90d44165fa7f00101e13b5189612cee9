@@ -1,0 +1,17 @@
+package in.onlinebookstore.repo;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import in.onlinebookstore.entity.Book;
+@Repository
+public interface BookCatalogRepo extends JpaRepository<Book, Long> {
+	
+	public List<Book> bookslist();
+	public Book addBook(Book book);
+	public String removeBook(Long id);
+		
+		
+	
+}

@@ -1,0 +1,2 @@
+spring.application.name=OnlineBookStore-CatalogService
+server.port=8002
